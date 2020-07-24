@@ -5,13 +5,14 @@
     <title>HTML - Convert numbers to words using JavaScript</title>
 
     <script src="./lab.js"></script>
+    <script src="./totext.js"></script>
 </head>
 
 <body>
 
 <h1>
 
-    Enter your number</h1>
+    Enter your digital number</h1>
 
 <input id="Text1" type="text" onkeyup="process(this.value,'divDisplayWords');"
 
@@ -19,9 +20,23 @@
 
 <br />
 
+<h1>
+
+    Enter your text number</h1>
+
+<input id="Text2" type="text"
+
+       maxlength="9" style="background-color: #efefef; border: 2px solid #CCCCC; font-size: large" />
+
+<button onclick="text2num('divDisplayNumbers');">Click</button>
+
 <br />
 
 <div id="divDisplayWords" style="font-size: 13; color: Teal; font-family: Arial;">
+
+</div>
+
+<div id="divDisplayNumbers" style="font-size: 13; color: Teal; font-family: Arial;">
 
 </div>
 
